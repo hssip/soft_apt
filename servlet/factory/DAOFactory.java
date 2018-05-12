@@ -10,4 +10,7 @@ public class DAOFactory {
 	public static TeacherDAO getTeacherDAOInstance(){
 		return new TeacherDAOProxy();
 	}
+	public static AppointmentDAO getAppointmentDAOInstance(){
+		return new AppointmentDAOproxy();
+	}
 }

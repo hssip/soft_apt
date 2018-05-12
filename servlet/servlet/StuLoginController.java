@@ -35,15 +35,20 @@ public class StuLoginController extends HttpServlet {
 		request.setCharacterEncoding("utf-8");
 		String name=request.getParameter("stu_id");
 		String pwd=request.getParameter("stu_password");
-		//System.out.println(name);
-		//System.out.println(pwd);
-		String ok_path="s_mainshow_view.html";
+		String ok_path="s_mainshow_view.jsp";
 		String no_path="login_view.jsp";
 		Stu stu=new Stu(name,pwd);
 		try {
 			if(DAOFactory.getStuDAOInstance().findLogin(stu)){
 				//request.setAttribute("flag", );
-				
+				stu=DAOFactory.getStuDAOInstance().find_base_info(stu);
+				request.setAttribute("sname",stu.getName());
+				request.setAttribute("sage",stu.getAge());
+				request.setAttribute("ssex",stu.getSex());
+				request.setAttribute("classnum",stu.getClass());
+				request.setAttribute("sid",stu.getId());
+				request.setAttribute("stel",stu.getTel());
+				request.setAttribute("sgrade",stu.getLevel());
 				request.getRequestDispatcher(ok_path).forward(request, response);
 			}
 			else{

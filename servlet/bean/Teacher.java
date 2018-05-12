@@ -17,6 +17,9 @@ public class Teacher {
 
 		
 	}
+	public Teacher(String _id){
+		setId(_id);
+	}
 	public Teacher(String _id,String _pwd){
 		setId(_id);
 		setPwd(_pwd);

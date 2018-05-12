@@ -1,8 +1,10 @@
 package dao.proxy;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import bean.Appointment;
+import bean.Freetime;
 import bean.Stu;
 import dao.StuDAO;
 import dao.impl.*;
@@ -34,7 +36,6 @@ public class StuDAOProxy implements StuDAO {
 		}finally{
 			this.dbc.close();
 		}
-		
 		return flag;
 	}
 
@@ -42,43 +43,57 @@ public class StuDAOProxy implements StuDAO {
 	@Override
 	public boolean update_base_info(Stu _stu) throws Exception {
 		// TODO 自动生成的方法存根
-		return false;
+		boolean flag=false;
+		try{
+			flag=this.dao.update_base_info(_stu);
+		}catch(Exception e){
+			throw e;
+		}finally{
+			this.dbc.close();
+		}
+		return flag;
 	}
 
 	@Override
 	public Stu find_base_info(Stu _stu) throws Exception {
 		// TODO 自动生成的方法存根
-		return null;
+		Stu stu=null;
+		try{
+			stu=this.dao.find_base_info(_stu);
+		}catch(Exception e){
+			throw e;
+		}finally{
+			this.dbc.close();
+		}
+		return stu;
 	}
 
 	@Override
-	public Appointment select_appointment(Stu _stu, List<String> key, List<String> value) throws Exception {
+	public boolean insert_appointment(Appointment _appointment) throws Exception {
 		// TODO 自动生成的方法存根
-		return null;
+		boolean flag=false;
+		try{
+			flag=this.dao.insert_appointment(_appointment);
+		}catch(Exception e){
+			throw e;
+		}finally{
+			this.dbc.close();
+		}
+		return flag;
 	}
 
 	@Override
-	public boolean updata_appointment(Stu _stu, Appointment appointment) throws Exception {
+	public ArrayList<Freetime> select_free(ArrayList<String> key, ArrayList<String> value) throws Exception {
 		// TODO 自动生成的方法存根
-		return false;
-	}
-
-	@Override
-	public boolean delete_appointment(Stu _stu) throws Exception {
-		// TODO 自动生成的方法存根
-		return false;
-	}
-
-	@Override
-	public boolean insert_appointment(Stu _stu) throws Exception {
-		// TODO 自动生成的方法存根
-		return false;
-	}
-
-	@Override
-	public List<String> select_free(Stu _stu, List<String> key, List<String> value) throws Exception {
-		// TODO 自动生成的方法存根
-		return null;
+		ArrayList<Freetime> a=new ArrayList<Freetime>();
+		try{
+			a=this.dao.select_free(key, value);
+		}catch(Exception e){
+			throw e;
+		}finally{
+			this.dbc.close();
+		}
+		return a;
 	}
 
 }

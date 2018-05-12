@@ -1,5 +1,7 @@
 package bean;
 
+import java.util.Calendar;
+
 import bean.*;
 
 
@@ -17,6 +19,14 @@ public class Appointment {
 	//getter setter
 	public void setId() {
 		String temp=null;
+		Calendar c = Calendar.getInstance();  
+		int year = c.get(Calendar.YEAR);  
+		int month = c.get(Calendar.MONTH);   
+		int date = c.get(Calendar.DATE);    
+		int hour = c.get(Calendar.HOUR_OF_DAY);   
+		int minute = c.get(Calendar.MINUTE);   
+		int second = c.get(Calendar.SECOND); 
+		temp=Integer.toString(year)+Integer.toString(month)+Integer.toString(date)+Integer.toString(hour)+Integer.toString(minute)+Integer.toString(second);
 		this.id = temp;
 	}
 	public void setStu_id(String stu_id) {

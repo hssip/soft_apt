@@ -18,6 +18,9 @@ public class Stu {
 	
 	public Stu(){	
 	}
+	public Stu(String _id){
+		setId(_id);
+	}
 	public Stu(String _id,String _pwd){
 		setId(_id);
 		setPwd(_pwd);
