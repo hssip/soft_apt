@@ -139,7 +139,7 @@
   width:318px;
   height:38px;
 }
-#stu_id {
+#u3_input {
   position:absolute;
   left:0px;
   top:0px;
@@ -161,7 +161,7 @@
   width:318px;
   height:38px;
 }
-#stu_password {
+#u4_input {
   position:absolute;
   left:0px;
   top:0px;
@@ -288,7 +288,7 @@
   width:318px;
   height:38px;
 }
-#teacher_id {
+#u7_input {
   position:absolute;
   left:0px;
   top:0px;
@@ -310,7 +310,7 @@
   width:318px;
   height:38px;
 }
-#teacher_password {
+#u8_input {
   position:absolute;
   left:0px;
   top:0px;

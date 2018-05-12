@@ -1589,13 +1589,25 @@
   visibility:hidden;
   word-wrap:break-word;
 }
+#timetable{
+  border-width:0px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:1015px;
+  height:660px;
+  font-family:'黑体 Regular', '黑体';
+  font-weight:400;
+  font-style:normal;
+  font-size:20px;
+}
 #u70 {
   border-width:0px;
   position:absolute;
   left:57px;
   top:299px;
   width:1015px;
-  height:60px;
+  height:660px;
   background:inherit;
   background-color:rgba(255, 255, 255, 0);
   border:none;
@@ -1618,7 +1630,7 @@
   -moz-box-shadow:none;
   -webkit-box-shadow:none;
   box-shadow:none;
-  font-family:'微软雅黑 Bold', '微软雅黑';
+  font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';
   font-weight:700;
   font-style:normal;
   font-size:21px;
@@ -1630,7 +1642,7 @@
   top:958px;
   width:147px;
   height:71px;
-  font-family:'微软雅黑 Bold', '微软雅黑';
+  font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';
   font-weight:700;
   font-style:normal;
   font-size:21px;
@@ -1665,6 +1677,111 @@
   width:1px;
   height:1px;
 }
+#u76 {
+  border-width:0px;
+  position:absolute;
+  left:98px;
+  top:76px;
+  width:1036px;
+  height:629px;
+}
+#u76_input {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:1036px;
+  height:629px;
+  font-family:'Arial Normal', 'Arial';
+  font-weight:400;
+  font-style:normal;
+  font-size:28px;
+  text-decoration:none;
+  color:#000000;
+}
+#u77_div {
+  border-width:0px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:171px;
+  height:73px;
+  background:inherit;
+  background-color:rgba(14, 99, 121, 0.407843137254902);
+  box-sizing:border-box;
+  border-width:1px;
+  border-style:solid;
+  border-color:rgba(121, 121, 121, 1);
+  border-radius:10px;
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  box-shadow:none;
+  font-family:'微软雅黑';
+  font-weight:400;
+  font-style:normal;
+  font-size:28px;
+}
+#u77 {
+  border-width:0px;
+  position:absolute;
+  left:183px;
+  top:864px;
+  width:171px;
+  height:73px;
+  font-family:'微软雅黑';
+  font-weight:400;
+  font-style:normal;
+  font-size:28px;
+}
+#u77_text {
+  border-width:0px;
+  position:absolute;
+  left:2px;
+  top:18px;
+  width:167px;
+  word-wrap:break-word;
+}
+#u78_div {
+  border-width:0px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:171px;
+  height:73px;
+  background:inherit;
+  background-color:rgba(14, 99, 121, 0.407843137254902);
+  box-sizing:border-box;
+  border-width:1px;
+  border-style:solid;
+  border-color:rgba(121, 121, 121, 1);
+  border-radius:10px;
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  box-shadow:none;
+  font-family:'微软雅黑';
+  font-weight:400;
+  font-style:normal;
+  font-size:28px;
+}
+#u78 {
+  border-width:0px;
+  position:absolute;
+  left:776px;
+  top:864px;
+  width:171px;
+  height:73px;
+  font-family:'微软雅黑';
+  font-weight:400;
+  font-style:normal;
+  font-size:28px;
+}
+#u78_text {
+  border-width:0px;
+  position:absolute;
+  left:2px;
+  top:18px;
+  width:167px;
+  word-wrap:break-word;
+}
 #u42_state3 {
   border-width:0px;
   position:absolute;
@@ -1686,4 +1803,67 @@
   top:0px;
   width:1px;
   height:1px;
+}
+#u79 {
+  border-width:0px;
+  position:absolute;
+  left:129px;
+  top:99px;
+  width:988px;
+  height:725px;
+}
+#u79_input {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:988px;
+  height:725px;
+  font-family:'Arial Normal', 'Arial';
+  font-weight:400;
+  font-style:normal;
+  font-size:28px;
+  text-decoration:none;
+  color:#000000;
+}
+#u80_div {
+  border-width:0px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:171px;
+  height:73px;
+  background:inherit;
+  background-color:rgba(14, 99, 121, 0.407843137254902);
+  box-sizing:border-box;
+  border-width:1px;
+  border-style:solid;
+  border-color:rgba(121, 121, 121, 1);
+  border-radius:10px;
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  box-shadow:none;
+  font-family:'微软雅黑';
+  font-weight:400;
+  font-style:normal;
+  font-size:28px;
+}
+#u80 {
+  border-width:0px;
+  position:absolute;
+  left:538px;
+  top:886px;
+  width:171px;
+  height:73px;
+  font-family:'微软雅黑';
+  font-weight:400;
+  font-style:normal;
+  font-size:28px;
+}
+#u80_text {
+  border-width:0px;
+  position:absolute;
+  left:2px;
+  top:18px;
+  width:167px;
+  word-wrap:break-word;
 }
